@@ -2,6 +2,7 @@
 import prompt
 import os, sys
 sys.path.append(r'C:\Users\user\Desktop\pythonProject\python-project-49\brain_games\scripts')
+sys.path.append(r'/home/raindrops/python-project-49/brain_games/scripts')
 from cli import main
 
 def base():
