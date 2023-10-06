@@ -42,7 +42,8 @@ def main():
         except:
             print("Ввод не верен")
             break
+        if num_correct_ans ==3:
 
-        print("Congratulations, Sam!")
+            print("Congratulations, {0}!".format(name))
 if __name__ == "__main__":
     main()

@@ -27,7 +27,8 @@ def main():
             print("Let's try again,{0}!".format(name))
             true_ans = 0
             break
-    print("Congratulations, {0}!".format(name))
+    if true_ans == 3:
+        print("Congratulations, {0}!".format(name))
 
 
 if __name__ == "__main__":

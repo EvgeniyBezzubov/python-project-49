@@ -31,6 +31,7 @@ def main():
             print("Ввод не верен")
             break
 
-
+    if num_correct_ans == 3:
+        print("Congratulations, {0}!".format(name))
 if __name__ == "__main__":
     main()

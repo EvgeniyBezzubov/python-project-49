@@ -32,7 +32,8 @@ def main():
             print("Let's try again, Sam!")
             break
 
-
+    if num_correct_ans == 3:
+        print("Congratulations, {0}!".format(name))
 def isPrime(n):
     if n % 2 == 0:
         return n == 2
