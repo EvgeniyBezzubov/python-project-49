@@ -17,5 +17,6 @@ check: selfcheck test lint
 
 build: check
 	poetry build
-
+brain-games:
+    poetry run brain-games
 .PHONY: install test lint selfcheck check build

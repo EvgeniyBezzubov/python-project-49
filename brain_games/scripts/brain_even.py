@@ -3,7 +3,7 @@ import prompt
 import random
 import sys
 sys.path.append(r'C:\Users\user\Desktop\pythonProject\python-project-49\brain_games\scripts')
-sys.path.append(r'/home/raindrops/python-project-49/brain_games/scripts')
+sys.path.append('/home/raindrops/.local/lib/python3.10/site-packages/brain_games/scripts/')
 import cli
 
 def main():
@@ -25,6 +25,7 @@ def main():
             print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(ans, correct_ans))
             print("Let's try again,{0}!".format(name))
             true_ans = 0
+            break
     print("Congratulations, {0}!".format(name))
 
 
