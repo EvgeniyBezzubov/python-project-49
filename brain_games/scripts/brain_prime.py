@@ -29,7 +29,7 @@ def main():
         else:
             print("Your answer: {0}".format(ans))
             print("'{0}' is wrong answer;(.Correct answer was '{1}'.".format(ans, right_ans_string))
-            print("Let's try again, Sam!")
+            print("'Let's try again, {0}!".format(name))
             break
 
     if num_correct_ans == 3:
