@@ -43,6 +43,6 @@ def main():
             print("Ввод не верен")
             break
 
-    print("Congratulations, Sam!")
+        print("Congratulations, Sam!")
 if __name__ == "__main__":
     main()
