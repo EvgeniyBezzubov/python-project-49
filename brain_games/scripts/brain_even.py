@@ -10,8 +10,9 @@ def main():
 
     name = cli.main()
     true_ans = 0
-    while true_ans < 1:
+    while true_ans < 3:
         rand_int = random.randint(1, 100)
+        print('Answer "yes" if the number is even, otherwise answer "no".')
         print('Question:', rand_int)
         ans = prompt.string('Your answer:')
         if rand_int % 2 == 1:
