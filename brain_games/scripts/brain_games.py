@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 import prompt
 import random
-
+from cli import main
 
 def base():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print("Hello, {0}!".format(name))
+    name = main()
 
 
 if __name__ == "__main__":

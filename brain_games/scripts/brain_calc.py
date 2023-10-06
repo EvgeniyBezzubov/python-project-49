@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 import prompt
 import random
-
+import cli
 
 def main():
     num_correct_ans = 0 #нужно 3 правильных ответа, не важно сколько ошибок
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print("Hello, {0}!".format(name))
+    name = cli.main()
     print("What is the result of the expression?")
-    while num_correct_ans <1:
+    while num_correct_ans <3:
 
         rand_int_a = random.randint(1, 100)
         rand_int_b = random.randint(1, 100)
@@ -24,6 +22,8 @@ def main():
                 num_correct_ans+=1
             else:
                 print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(ans, right_ans))
+                print("'Let's try again, {0}!".format(name))
+
         except:
             print("Ввод не верен")
 if __name__ == "__main__":

@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 import prompt
 import random
-
+import cli
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print("Hello, {0}!".format(name))
-    print("Answer '"'yes'"' if the number is even, otherwise answer '"'no'"'.")
 
+    name = cli.main()
     true_ans = 0
-    while true_ans < 3:
+    while true_ans < 1:
         rand_int = random.randint(1, 100)
         print('Question:', rand_int)
         ans = prompt.string('Your answer:')
