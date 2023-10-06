@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import prompt
 import random
+import sys
+sys.path.append(r'C:\Users\user\Desktop\pythonProject\python-project-49\brain_games\scripts')
 import cli
 import math
 def main():
