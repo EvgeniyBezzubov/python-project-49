@@ -8,3 +8,10 @@ https://asciinema.org/a/mwGpLunNBjIfMSjNeWMn2GIpu gcd
 https://asciinema.org/a/mZWxHrESjkOXq527RwUFQASyA progression
 https://asciinema.org/a/XvMVeHCQqEpdMB3YoJNRRIKpJ is prime
 https://asciinema.org/a/5qG7zcY2a51vOAv4RcndxcM2E calc
+
+Installation guide:
+git clone https://github.com/EvgeniyBezzubov/python-project-49.git
+cd python-project-49
+python3 -m pip install --user dist/*.whl
+
+done!
