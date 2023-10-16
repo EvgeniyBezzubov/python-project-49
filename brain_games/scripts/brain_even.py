@@ -10,25 +10,25 @@ import cli
 
 def main():
     name = cli.main()
-    TRUE_ANS = 0
-    while TRUE_ANS < 3:
-        rand_int = random.randint(1, 100)
+    COUNT_TRUE_ANS = 0
+    while COUNT_TRUE_ANS < 3:
+        generated_random_num = random.randint(1, 100)
         print('Answer "yes" if the number is even, otherwise answer "no".')
-        print('Question:', rand_int)
-        ans = prompt.string('Your answer:')
-        if rand_int % 2 == 1:
-            correct_ans = "no"
+        print('Question:', generated_random_num)
+        user_answer = prompt.string('Your answer:')
+        if generated_random_num % 2 == 1:
+            correct_answer = "no"
         else:
-            correct_ans = "yes"
-        if ans == correct_ans:
+            correct_answer = "yes"
+        if user_answer == correct_answer:
             print("Correct!")
-            TRUE_ANS += 1
-        elif ans != correct_ans:
-            print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(ans, correct_ans))
+            COUNT_TRUE_ANS += 1
+        elif user_answer != correct_answer:
+            print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(user_answer, correct_answer))
             print("Let's try again,{0}!".format(name))
-            TRUE_ANS = 0
+            COUNT_TRUE_ANS = 0
             break
-    if TRUE_ANS == 3:
+    if COUNT_TRUE_ANS == 3:
         print("Congratulations, {0}!".format(name))
 
 

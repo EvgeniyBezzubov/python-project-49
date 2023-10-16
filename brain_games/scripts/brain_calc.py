@@ -12,12 +12,12 @@ def main():
     print("What is the result of the expression?")
     while NUM_CORRECT_ANS <3:
 
-        rand_int_a = random.randint(1, 100)
-        rand_int_b = random.randint(1, 100)
+        generated_random_num_1 = random.randint(1, 100)
+        generated_random_num_2 = random.randint(1, 100)
         rand_operation = random.randint(0, 2)
         lst_operations =["+", "-","*"]
-        print('Question: {0} {1} {2}'.format(rand_int_a, lst_operations[rand_operation], rand_int_b) )
-        right_ans = eval("{0} {1} {2}".format(rand_int_a, lst_operations[rand_operation], rand_int_b))
+        print('Question: {0} {1} {2}'.format(generated_random_num_1, lst_operations[rand_operation], generated_random_num_2) )
+        right_ans = eval("{0} {1} {2}".format(generated_random_num_1, lst_operations[rand_operation], generated_random_num_2))
         ans = prompt.string('Your answer:')
         try:
             if right_ans == int(ans):

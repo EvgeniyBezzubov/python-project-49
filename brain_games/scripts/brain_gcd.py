@@ -14,10 +14,10 @@ def main():
     name = cli.main()
     print("Find the greatest common divisor of given numbers.")
     while NUM_CORRECT_ANS < 3:
-        rand_int_a = random.randint(1, 100)
-        rand_int_b = random.randint(1, 100)
-        print('Question: {0} {1} '.format(rand_int_a, rand_int_b))
-        right_ans = math.gcd(rand_int_a, rand_int_b)
+        generated_random_num_1 = random.randint(1, 100)
+        generated_random_num_2 = random.randint(1, 100)
+        print('Question: {0} {1} '.format(generated_random_num_1, generated_random_num_2))
+        right_ans = math.gcd(generated_random_num_1, generated_random_num_2)
         ans = prompt.string('Your answer:')
         try:
             if right_ans == int(ans):
