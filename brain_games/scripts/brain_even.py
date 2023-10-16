@@ -2,15 +2,16 @@
 import prompt
 import random
 import sys
+
 sys.path.append(r'C:\Users\user\Desktop\pythonProject\python-project-49\brain_games\scripts')
 sys.path.append('/home/raindrops/.local/lib/python3.10/site-packages/brain_games/scripts/')
 import cli
 
-def main():
 
+def main():
     name = cli.main()
-    true_ans = 0
-    while true_ans < 3:
+    TRUE_ANS = 0
+    while TRUE_ANS < 3:
         rand_int = random.randint(1, 100)
         print('Answer "yes" if the number is even, otherwise answer "no".')
         print('Question:', rand_int)
@@ -21,13 +22,13 @@ def main():
             correct_ans = "yes"
         if ans == correct_ans:
             print("Correct!")
-            true_ans += 1
+            TRUE_ANS += 1
         elif ans != correct_ans:
             print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(ans, correct_ans))
             print("Let's try again,{0}!".format(name))
-            true_ans = 0
+            TRUE_ANS = 0
             break
-    if true_ans == 3:
+    if TRUE_ANS == 3:
         print("Congratulations, {0}!".format(name))
 
 

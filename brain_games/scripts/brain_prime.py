@@ -12,17 +12,17 @@ def main():
     num_correct_ans = 0
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while num_correct_ans < 3:
-        right_ans_string = ""
+        RIGHT_ANS_STRING = ""
         simple = random.randint(1, 20)
         right_ans = isPrime(simple)
         print('Question: {0}'.format(simple))
         if right_ans == True:
-            right_ans_string = "yes"
+            RIGHT_ANS_STRING = "yes"
         else:
-            right_ans_string = "no"
+            RIGHT_ANS_STRING = "no"
 
         ans = prompt.string('Your answer:')
-        if right_ans_string == ans:
+        if RIGHT_ANS_STRING == ans:
             print("Your answer: {0}".format(ans))
             print("Correct!")
             num_correct_ans+=1

@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Project include 4 simple games"
 authors = ["Evgeniy.Bezzubov <raindrops228@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
-
+classifiers = ["Development Status :: 4 - Beta"]
 [tool.poetry.dependencies]
 python = "^3.9"
 prompt = "^0.4.1"

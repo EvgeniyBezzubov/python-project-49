@@ -10,10 +10,10 @@ import math
 
 
 def main():
-    num_correct_ans = 0  # нужно 3 правильных ответа, не важно сколько ошибок
+    NUM_CORRECT_ANS = 0  # нужно 3 правильных ответа, не важно сколько ошибок
     name = cli.main()
     print("Find the greatest common divisor of given numbers.")
-    while num_correct_ans < 3:
+    while NUM_CORRECT_ANS < 3:
         rand_int_a = random.randint(1, 100)
         rand_int_b = random.randint(1, 100)
         print('Question: {0} {1} '.format(rand_int_a, rand_int_b))
@@ -22,7 +22,7 @@ def main():
         try:
             if right_ans == int(ans):
                 print("Correct!")
-                num_correct_ans += 1
+                NUM_CORRECT_ANS += 1
             else:
                 print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(ans, right_ans))
                 print("'Let's try again, {0}!".format(name))
@@ -31,7 +31,7 @@ def main():
             print("Ввод не верен")
             break
 
-    if num_correct_ans == 3:
+    if NUM_CORRECT_ANS == 3:
         print("Congratulations, {0}!".format(name))
 if __name__ == "__main__":
     main()
