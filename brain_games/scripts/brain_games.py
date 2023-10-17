@@ -3,8 +3,7 @@ from brain_games.scripts.cli import main
 
 
 def base():
-    name = main()
-    print()
+    main()
 
 
 if __name__ == "__main__":
