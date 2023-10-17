@@ -13,7 +13,7 @@ def main():
         simple = random.randint(1, 20)
         right_ans = isPrime(simple)
         print('Question: {0}'.format(simple))
-        if right_ans == True:
+        if right_ans:
             RIGHT_ANS_STRING = "yes"
         else:
             RIGHT_ANS_STRING = "no"

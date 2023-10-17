@@ -20,7 +20,8 @@ def main():
             print("Correct!")
             COUNT_TRUE_ANS += 1
         elif user_answer != correct_answer:
-            print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(user_answer, correct_answer))
+            print(f"'{user_answer}' is wrong answer ;(.", end="")
+            print(f"' Correct answer was '{correct_answer}'.", end="")
             print("Let's try again, {0}!".format(name))
             COUNT_TRUE_ANS = 0
             break
