@@ -6,7 +6,7 @@ from cli import main
 
 
 def base():
-    main()
+    name = main()
 
 
 if __name__ == "__main__":
