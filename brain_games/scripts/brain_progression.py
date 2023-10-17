@@ -27,20 +27,17 @@ def main():
         ans_string = "Question: " + ans_string
         print(ans_string)
         ans = prompt.string('Your answer:')
-        try:
-            if right_ans == int(ans):
-                print("Correct!")
-                num_correct_ans += 1
-            else:
-                print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(ans, right_ans))
-                print("'Let's try again, {0}!".format(name))
-                break
-
-        except:
-            print("Ввод не верен")
+        if right_ans == int(ans):
+            print("Correct!")
+            num_correct_ans += 1
+        else:
+            print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(ans, right_ans))
+            print("'Let's try again, {0}!".format(name))
             break
-        if num_correct_ans ==3:
 
+        if num_correct_ans == 3:
             print("Congratulations, {0}!".format(name))
+
+
 if __name__ == "__main__":
     main()
