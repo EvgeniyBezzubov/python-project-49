@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 import prompt
 import random
-import cli
-
-
-# import brain_games.scripts.cli as cli
+import brain_games.scripts.cli as cli
 
 
 def main():
