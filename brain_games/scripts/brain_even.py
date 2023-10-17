@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 import prompt
 import random
-import sys
-
-#sys.path.append(r'C:\Users\user\Desktop\pythonProject\python-project-49\brain_games\scripts')
-#sys.path.append('/home/raindrops/.local/lib/python3.10/site-packages/brain_games/scripts/')
 import brain_games.scripts.cli as cli
 
 def main():
