@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import prompt
 import random
-import brain_games.scripts.cli as cli
+import cli
 
 
 def main():
@@ -15,7 +15,7 @@ def main():
         rand_operation = random.randint(0, 2)
         lst_operations = ["+", "-", "*"]
         print(f'Question: {generated_random_num_1}', end="")
-        print(f'{lst_operations[rand_operation]}{generated_random_num_2}')
+        print(f' {lst_operations[rand_operation]} {generated_random_num_2}')
         right_ans = eval(f"{generated_random_num_1}\
              {lst_operations[rand_operation]} {generated_random_num_2}")
         ans = prompt.string('Your answer:')
