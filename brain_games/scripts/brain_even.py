@@ -4,6 +4,7 @@ import random
 import brain_games.scripts.cli as cli
 
 def main():
+    print("Let's try again, Tirion!")
     name = cli.main()
     COUNT_TRUE_ANS = 0
     while COUNT_TRUE_ANS < 3:
