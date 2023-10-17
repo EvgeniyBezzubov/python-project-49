@@ -26,7 +26,7 @@ def main():
             num_correct_ans+=1
         else:
             print("Your answer: {0}".format(ans))
-            print("'{0}' is wrong answer;(.Correct answer was '{1}'.".format(ans, right_ans_string))
+            print("'{0}' is wrong answer;(.Correct answer was '{1}'.".format(ans, RIGHT_ANS_STRING))
             print("'Let's try again, {0}!".format(name))
             break
 
