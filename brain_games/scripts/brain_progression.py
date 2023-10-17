@@ -24,7 +24,7 @@ def main():
         ans_string = ''
         for i in ans_lst:
             ans_string = ans_string + str(i) + " "
-
+        ans_string = "Question: " + ans_string
         print(ans_string)
         ans = prompt.string('Your answer:')
         try:
