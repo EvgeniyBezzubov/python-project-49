@@ -4,7 +4,7 @@ import random
 import sys
 sys.path.append(r'C:\Users\user\Desktop\pythonProject\python-project-49\brain_games\scripts')
 sys.path.append('/home/raindrops/.local/lib/python3.10/site-packages/brain_games/scripts/')
-import cli
+import brain_games.scripts.cli as cli
 
 def main():
     NUM_CORRECT_ANS = 0 #нужно 3 правильных ответа, не важно сколько ошибок
