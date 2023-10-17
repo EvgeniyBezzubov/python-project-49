@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import prompt
 import random
-import sys
 import brain_games.scripts.cli as cli
 
 
@@ -23,15 +22,18 @@ def main():
         if RIGHT_ANS_STRING == ans:
             print("Your answer: {0}".format(ans))
             print("Correct!")
-            num_correct_ans+=1
+            num_correct_ans += 1
         else:
             print("Your answer: {0}".format(ans))
-            print("'{0}' is wrong answer;(.Correct answer was '{1}'.".format(ans, RIGHT_ANS_STRING))
+            print(f"'{ans}' is wrong answer;(.", end="")
+            print(f"'Correct answer was '{RIGHT_ANS_STRING}'.")
             print("'Let's try again, {0}!".format(name))
             break
 
     if num_correct_ans == 3:
         print("Congratulations, {0}!".format(name))
+
+
 def isPrime(n):
     if n % 2 == 0:
         return n == 2
