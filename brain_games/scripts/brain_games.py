@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-# from brain_games.scripts.cli import main
+from brain_games.scripts.cli import main
 
 
 def base():
     name = main()
-
     print()
 
 
