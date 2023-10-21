@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import brain_games.scripts.cli as cli
-import games.game_brain_even as drive_brain_even
+import brain_games.games.game_brain_even as drive_brain_even
 
 
 def main():

@@ -1,4 +1,4 @@
-import games.game_cli as game_hello
+import brain_games.games.game_cli as game_hello
 
 
 def main():

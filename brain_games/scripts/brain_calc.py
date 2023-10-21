@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import brain_games.scripts.cli as cli
-import games.game_calc as drive_calc
+import brain_games.games.game_calc as drive_calc
 
 
 def main():

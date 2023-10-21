@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import games.game_progression as drive_progression
+import brain_games.games.game_progression as drive_progression
 import brain_games.scripts.cli as cli
 
 
