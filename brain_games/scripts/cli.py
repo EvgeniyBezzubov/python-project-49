@@ -1,10 +1,8 @@
-import prompt
+import games.game_cli as game_hello
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print("Hello, {0}!".format(name))
+    name = game_hello.say_hello()
     return name
 
 
