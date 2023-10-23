@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-import brain_games.scripts.cli as cli
-import brain_games.games.game_brain_even as drive_brain_even
+from brain_games.games.game_brain_even import run
 
 
 def main():
-    name = cli.main()
-    drive_brain_even.run(str(name))
+    run()
 
 
 if __name__ == "__main__":

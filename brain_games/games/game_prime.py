@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 import prompt
 import random
+from brain_games.scripts.cli import main
+from brain_games.drive import ans_validator
 
 
-def run(name):
+def run(num_correct_ans=0):
+    name = main()
     num_correct_ans = 0
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while num_correct_ans < 3:
@@ -17,19 +20,7 @@ def run(name):
             RIGHT_ANS_STRING = "no"
 
         ans = prompt.string('Your answer:')
-        if RIGHT_ANS_STRING == ans:
-            print("Your answer: {0}".format(ans))
-            print("Correct!")
-            num_correct_ans += 1
-        else:
-            print("Your answer: {0}".format(ans))
-            print(f"'{ans}' is wrong answer;(.", end="")
-            print(f"'Correct answer was '{RIGHT_ANS_STRING}'.")
-            print("'Let's try again, {0}!".format(name))
-            break
-
-    if num_correct_ans == 3:
-        print("Congratulations, {0}!".format(name))
+        num_correct_ans = ans_validator(ans, RIGHT_ANS_STRING, name, num_correct_ans)
 
 
 def isPrime(n):

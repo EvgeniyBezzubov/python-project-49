@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-import brain_games.games.game_progression as drive_progression
-import brain_games.scripts.cli as cli
+from brain_games.games.game_progression import run
 
 
 def main():
-    name = cli.main()
-    drive_progression.run(name)
+    run()
 
 
 if __name__ == "__main__":

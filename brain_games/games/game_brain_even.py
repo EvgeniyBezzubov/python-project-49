@@ -1,9 +1,11 @@
 import prompt
 import random
+from brain_games.scripts.cli import main
+from brain_games.drive import ans_validator
 
 
-def run(name):
-    COUNT_TRUE_ANS = 0
+def run(COUNT_TRUE_ANS = 0):
+    name = main()
     while COUNT_TRUE_ANS < 3:
         generated_random_num = random.randint(1, 100)
         print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -13,14 +15,5 @@ def run(name):
             correct_answer = "no"
         else:
             correct_answer = "yes"
-        if user_answer == correct_answer:
-            print("Correct!")
-            COUNT_TRUE_ANS += 1
-        elif user_answer != correct_answer:
-            print(f"'{user_answer}' is wrong answer ;(.", end="")
-            print(f"' Correct answer was '{correct_answer}'.", end="")
-            print("Let's try again, {0}!".format(name))
-            COUNT_TRUE_ANS = 0
-            break
-    if COUNT_TRUE_ANS == 3:
-        print("Congratulations, {0}!".format(name))
+
+        COUNT_TRUE_ANS = ans_validator(user_answer, correct_answer, name, COUNT_TRUE_ANS)

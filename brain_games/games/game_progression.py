@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 import prompt
 import random
+from brain_games.scripts.cli import main
+from brain_games.drive import ans_validator
 
 
-def run(name):
+def run(num_correct_ans = 0 ):
+    name = main()
     print("What number is missing in the progression?")
-    num_correct_ans = 0  # нужно 3 правильных ответа, не важно сколько ошибок
+     # нужно 3 правильных ответа, не важно сколько ошибок
     while num_correct_ans < 3:
         num_step = 0
         ans_lst = []
@@ -24,14 +27,5 @@ def run(name):
         ans_string = "Question: " + ans_string
         print(ans_string)
         ans = prompt.string('Your answer:')
-        if right_ans == int(ans):
-            print("Correct!")
-            num_correct_ans += 1
-        else:
-            print(f"'{ans}' is wrong answer ;(.", end="")
-            print(f"' Correct answer was '{right_ans}'.", end="")
-            print("'Let's try again, {0}!".format(name))
-            break
+        num_correct_ans = ans_validator(ans, right_ans, name, num_correct_ans)
 
-        if num_correct_ans == 3:
-            print("Congratulations, {0}!".format(name))
