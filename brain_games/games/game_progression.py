@@ -28,4 +28,5 @@ def run(num_correct_ans = 0 ):
         print(ans_string)
         ans = prompt.string('Your answer:')
         num_correct_ans = ans_validator(ans, right_ans, name, num_correct_ans)
-
+        if num_correct_ans == 0:
+            break

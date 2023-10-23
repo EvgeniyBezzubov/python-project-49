@@ -17,3 +17,5 @@ def run(COUNT_TRUE_ANS = 0):
             correct_answer = "yes"
 
         COUNT_TRUE_ANS = ans_validator(user_answer, correct_answer, name, COUNT_TRUE_ANS)
+        if COUNT_TRUE_ANS == 0:
+            break
