@@ -1,4 +1,8 @@
 def ans_validator(ans, right_ans, name, NUM_CORRECT_ANS):
+    """
+
+    :rtype: object
+    """
     if str(right_ans) == str(ans):
         print("Correct!")
         NUM_CORRECT_ANS += 1

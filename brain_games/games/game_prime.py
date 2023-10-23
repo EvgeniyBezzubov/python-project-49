@@ -20,9 +20,11 @@ def run(num_correct_ans=0):
             RIGHT_ANS_STRING = "no"
 
         ans = prompt.string('Your answer:')
-        num_correct_ans = ans_validator(ans, RIGHT_ANS_STRING, name, num_correct_ans)
+        num_correct_ans = ans_validator(ans, RIGHT_ANS_STRING,
+                                        name, num_correct_ans)
         if num_correct_ans == 0:
             break
+
 
 def isPrime(n):
     if n % 2 == 0:

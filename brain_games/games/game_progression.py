@@ -5,10 +5,9 @@ from brain_games.scripts.cli import main
 from brain_games.drive import ans_validator
 
 
-def run(num_correct_ans = 0 ):
+def run(num_correct_ans=0):
     name = main()
     print("What number is missing in the progression?")
-     # нужно 3 правильных ответа, не важно сколько ошибок
     while num_correct_ans < 3:
         num_step = 0
         ans_lst = []
