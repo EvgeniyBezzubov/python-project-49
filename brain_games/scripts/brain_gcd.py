@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import brain_games.games.game_gcd as drive_gcd
+from brain_games.games.game_gcd import run
 
 
 def main():
-    drive_gcd.run()
+    run()
 
 
 if __name__ == "__main__":

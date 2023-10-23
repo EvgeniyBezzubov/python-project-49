@@ -1,8 +1,8 @@
-import brain_games.games.game_cli as game_hello
+from brain_games.games.game_cli import say_hello
 
 
 def main():
-    name = game_hello.say_hello()
+    name = say_hello()
     return name
 
 

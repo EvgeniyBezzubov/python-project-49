@@ -4,7 +4,7 @@ from brain_games.scripts.cli import main
 from brain_games.drive import ans_validator
 
 
-def run(COUNT_TRUE_ANS = 0):
+def run(COUNT_TRUE_ANS=0):
     name = main()
     while COUNT_TRUE_ANS < 3:
         generated_random_num = random.randint(1, 100)

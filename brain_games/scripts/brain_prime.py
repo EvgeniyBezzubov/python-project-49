@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import brain_games.games.game_prime as drive_prime
+from brain_games.games.game_prime import run
 
 
 def main():
 
-    drive_prime.run()
+    run()
 
 
 if __name__ == "__main__":
