@@ -1,29 +1,20 @@
 #!/usr/bin/env python3
-import prompt
 import random
-from brain_games.scripts.cli import main
-from brain_games.drive import ans_validator
+from brain_games.const import PRIME_INSTRUCTION
 
 
-def run(num_correct_ans=0):
-    name = main()
-    num_correct_ans = 0
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    while num_correct_ans < 3:
-        RIGHT_ANS_STRING = ""
-        simple = random.randint(1, 20)
-        right_ans = isPrime(simple)
-        print('Question: {0}'.format(simple))
-        if right_ans:
-            RIGHT_ANS_STRING = "yes"
-        else:
-            RIGHT_ANS_STRING = "no"
+def game_prime_run():
+    print(PRIME_INSTRUCTION)
+    RIGHT_ANS_STRING = ""
+    simple = random.randint(1, 20)
+    right_ans = isPrime(simple)
+    print('Question: {0}'.format(simple))
+    if right_ans:
+        RIGHT_ANS_STRING = "yes"
+    else:
+        RIGHT_ANS_STRING = "no"
 
-        ans = prompt.string('Your answer:')
-        num_correct_ans = ans_validator(ans, RIGHT_ANS_STRING,
-                                        name, num_correct_ans)
-        if num_correct_ans == 0:
-            break
+    return RIGHT_ANS_STRING
 
 
 def isPrime(n):

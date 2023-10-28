@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.scripts.cli import main
+from brain_games.scripts.cli import hello
 
 
 def base():
-    main()
+    hello()
 
 
 if __name__ == "__main__":

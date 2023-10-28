@@ -1,16 +1,19 @@
-def ans_validator(ans, right_ans, name, NUM_CORRECT_ANS):
-    """
+import prompt
 
-    :rtype: object
-    """
-    if str(right_ans) == str(ans):
-        print("Correct!")
-        NUM_CORRECT_ANS += 1
-    else:
-        print(f"'{ans}' is wrong answer ;(.", end="")
-        print(f"' Correct answer was '{right_ans}'.", end="")
-        print("'Let's try again, {0}!".format(name))
-        NUM_CORRECT_ANS = 0
-    if NUM_CORRECT_ANS == 3:
-        print("Congratulations, {0}!".format(name))
-    return NUM_CORRECT_ANS
+
+def ans_validator(name, get_answer_and_question):
+    name = name()
+    NUM_CORRECT_ANS = 0  # Перемещаем запрос имени пользователя в начало функции
+    while NUM_CORRECT_ANS < 3:
+        right_ans = get_answer_and_question()  # Вызываем функцию для получения вопроса и ответа
+        ans = prompt.string('Your answer: ')
+        if str(right_ans) == str(ans):
+            print("Correct!")
+            NUM_CORRECT_ANS += 1
+        else:
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{right_ans}'.")
+            print("Let's try again, {0}!".format(name))
+            break  # Завершаем выполнение функции после неправильного ответа
+
+        if NUM_CORRECT_ANS == 3:
+            print("Congratulations, {0}!".format(name))
