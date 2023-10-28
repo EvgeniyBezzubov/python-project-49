@@ -10,4 +10,3 @@ def game_gcd_run():
     print(f'Question: {generated_random_num_1} {generated_random_num_2} ')
     r_ans = math.gcd(generated_random_num_1, generated_random_num_2)
     return r_ans
-
