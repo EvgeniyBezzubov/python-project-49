@@ -16,5 +16,6 @@ def game_calc_run():
          {lst_operations[rand_operation]} {generated_random_num_2}")
     return right_ans
 
+
 def start_game_calc_one_line():
     ans_validator(hello, game_calc_run)

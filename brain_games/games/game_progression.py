@@ -25,8 +25,10 @@ def game_progression_run():
     print(ans_string)
     return right_ans
 
+
 def start_game_progression_one_line():
     ans_validator(hello, game_progression_run)
+
 
 if __name__ == "__main__":
     game_progression_run()

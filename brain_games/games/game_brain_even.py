@@ -5,7 +5,6 @@ from brain_games.scripts.cli import hello
 
 
 def game_even_run():
-
     generated_random_num = random.randint(1, 100)
     print(EVEN_INSTRUCTION)
     print('Question:', generated_random_num)
@@ -15,5 +14,7 @@ def game_even_run():
         correct_answer = "yes"
 
     return correct_answer
+
+
 def start_game_even_one_line():
     ans_validator(hello, game_even_run)

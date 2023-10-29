@@ -28,5 +28,7 @@ def isPrime(n):
     while d * d <= n and n % d != 0:
         d += 2
     return d * d > n
+
+
 def start_game_prime_one_line():
     ans_validator(hello, game_prime_run)

@@ -13,5 +13,6 @@ def game_gcd_run():
     r_ans = math.gcd(generated_random_num_1, generated_random_num_2)
     return r_ans
 
+
 def start_game_gcd_one_line():
     ans_validator(hello, game_gcd_run)
