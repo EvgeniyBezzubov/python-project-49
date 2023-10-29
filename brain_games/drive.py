@@ -7,7 +7,6 @@ def ans_validator(name, get_answer_and_question):
     # пользователя в начало функции
     while NUM_CORRECT_ANS < 3:
         right_ans = get_answer_and_question()
-            # Вызываем функцию для получения вопроса и ответа
         ans = prompt.string('Your answer: ')
         if str(right_ans) == str(ans):
             print("Correct!")
