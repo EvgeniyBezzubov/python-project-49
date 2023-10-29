@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.games.game_progression import game_progression_run
+from brain_games.games.game_progression import start_game_progression_one_line
 from brain_games.drive import ans_validator
 from brain_games.scripts.cli import hello
 
 
 def main():
-    ans_validator(hello, game_progression_run)
-    pass
+    start_game_progression_one_line()
 
 
 if __name__ == "__main__":

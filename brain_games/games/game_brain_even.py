@@ -1,5 +1,7 @@
 import random
 from brain_games.const import EVEN_INSTRUCTION
+from brain_games.drive import ans_validator
+from brain_games.scripts.cli import hello
 
 
 def game_even_run():
@@ -13,3 +15,5 @@ def game_even_run():
         correct_answer = "yes"
 
     return correct_answer
+def start_game_even_one_line():
+    ans_validator(hello, game_even_run)

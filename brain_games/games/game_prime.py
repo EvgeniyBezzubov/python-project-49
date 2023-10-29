@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import random
 from brain_games.const import PRIME_INSTRUCTION
+from brain_games.drive import ans_validator
+from brain_games.scripts.cli import hello
 
 
 def game_prime_run():
@@ -26,3 +28,5 @@ def isPrime(n):
     while d * d <= n and n % d != 0:
         d += 2
     return d * d > n
+def start_game_prime_one_line():
+    ans_validator(hello, game_prime_run)

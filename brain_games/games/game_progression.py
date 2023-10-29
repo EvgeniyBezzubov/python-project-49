@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import random
 from brain_games.const import PROGRESSION_INSTRUCTION
+from brain_games.drive import ans_validator
+from brain_games.scripts.cli import hello
 
 
 def game_progression_run():
@@ -23,6 +25,8 @@ def game_progression_run():
     print(ans_string)
     return right_ans
 
+def start_game_progression_one_line():
+    ans_validator(hello, game_progression_run)
 
 if __name__ == "__main__":
     game_progression_run()

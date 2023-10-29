@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.games.game_calc import game_calc_run
-from brain_games.drive import ans_validator
-from brain_games.scripts.cli import hello
+from brain_games.games.game_calc import start_game_calc_one_line
 
 
 def main():
-    ans_validator(hello, game_calc_run)
+    start_game_calc_one_line()
 
 
 if __name__ == "__main__":
