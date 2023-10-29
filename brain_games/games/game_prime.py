@@ -20,6 +20,8 @@ def game_prime_run():
 def isPrime(n):
     if n % 2 == 0:
         return n == 2
+    elif n == 1:
+        return False
     d = 3
     while d * d <= n and n % d != 0:
         d += 2
