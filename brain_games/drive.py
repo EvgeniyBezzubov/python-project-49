@@ -15,7 +15,7 @@ def user_response_request(name, get_answer_and_question):
             break  # Завершаем выполнение функции\
             # после неправильного ответа
 
-        if i == 3:
+        if i == 2:
             print("Congratulations, {0}!".format(name))
 
 
