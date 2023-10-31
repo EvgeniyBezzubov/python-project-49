@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 import random
 from brain_games.const import PRIME_INSTRUCTION
-from brain_games.drive import ans_validator
-from brain_games.scripts.cli import hello
+from brain_games.drive import say_hello
+from brain_games.drive import user_response_request
 
 
-def game_prime_run():
+def return_r_ans_prime():
     print(PRIME_INSTRUCTION)
     RIGHT_ANS_STRING = ""
     simple = random.randint(1, 20)
@@ -30,5 +30,5 @@ def isPrime(n):
     return d * d > n
 
 
-def start_game_prime_one_line():
-    ans_validator(hello, game_prime_run)
+def start_game_prime():
+    user_response_request(say_hello, return_r_ans_prime)

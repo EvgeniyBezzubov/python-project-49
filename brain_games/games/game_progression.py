@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 import random
 from brain_games.const import PROGRESSION_INSTRUCTION
-from brain_games.drive import ans_validator
-from brain_games.scripts.cli import hello
+from brain_games.drive import say_hello
+from brain_games.drive import user_response_request
 
 
-def game_progression_run():
+def return_r_ans_progression():
     print(PROGRESSION_INSTRUCTION)
     num_step = 0
     ans_lst = []
@@ -26,9 +26,9 @@ def game_progression_run():
     return right_ans
 
 
-def start_game_progression_one_line():
-    ans_validator(hello, game_progression_run)
+def start_game_progression():
+    user_response_request(say_hello, return_r_ans_progression)
 
 
 if __name__ == "__main__":
-    game_progression_run()
+    return_r_ans_progression()

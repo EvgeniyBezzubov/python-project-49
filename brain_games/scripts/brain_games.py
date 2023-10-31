@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.scripts.cli import hello
+from brain_games.drive import say_hello
 
 
 def base():
-    hello()
+    say_hello()
 
 
 if __name__ == "__main__":
