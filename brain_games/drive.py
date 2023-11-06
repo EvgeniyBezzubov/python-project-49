@@ -9,7 +9,7 @@ def user_response_request(INSTRUCTION, get_answer_and_question):
         right_ans = lst_correct_ans_and_quest[0]
         question = lst_correct_ans_and_quest[1]
         print(INSTRUCTION)
-        print('Question:', question)
+        print(question)
         ans = prompt.string('Your answer: ')
         if str(right_ans) == str(ans):
             print("Correct!")

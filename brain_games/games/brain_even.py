@@ -5,7 +5,7 @@ from brain_games.drive import user_response_request
 
 def return_r_ans_and_question_even():
     generated_random_num = random.randint(1, 100)
-    question = 'Question:' + str(generated_random_num)
+    question = f'Question: ' + str(generated_random_num)
     correct_answer = is_correct_answer(generated_random_num)
     return [correct_answer, question]
 
