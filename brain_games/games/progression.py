@@ -5,7 +5,6 @@ from brain_games.drive import user_response_request
 
 
 def return_r_ans_progression():
-    print(PROGRESSION_INSTRUCTION)
     num_step = 0
     ans_lst = []
     start_int = random.randint(1, 20)
@@ -21,12 +20,11 @@ def return_r_ans_progression():
     for i in ans_lst:
         ans_string = ans_string + str(i) + " "
     ans_string = "Question: " + ans_string
-    print(ans_string)
-    return right_ans
+    return [right_ans, ans_string]
 
 
 def start_game_progression():
-    user_response_request(return_r_ans_progression)
+    user_response_request(PROGRESSION_INSTRUCTION, return_r_ans_progression)
 
 
 if __name__ == "__main__":

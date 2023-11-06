@@ -5,17 +5,16 @@ from brain_games.drive import user_response_request
 
 
 def return_r_ans_prime():
-    print(PRIME_INSTRUCTION)
     RIGHT_ANS_STRING = ""
     simple = random.randint(1, 20)
     right_ans = isPrime(simple)
-    print('Question: {0}'.format(simple))
+    question = 'Question: {0}'.format(simple)
     if right_ans:
         RIGHT_ANS_STRING = "yes"
     else:
         RIGHT_ANS_STRING = "no"
 
-    return RIGHT_ANS_STRING
+    return [RIGHT_ANS_STRING, question]
 
 
 def isPrime(n):
@@ -30,4 +29,4 @@ def isPrime(n):
 
 
 def start_game_prime():
-    user_response_request(return_r_ans_prime)
+    user_response_request(PRIME_INSTRUCTION, return_r_ans_prime)
