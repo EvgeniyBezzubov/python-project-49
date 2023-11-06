@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.drive import say_hello
+from brain_games.games.cli import welcome_user
 
 
 def base():
-    say_hello()
+    welcome_user()
 
 
 if __name__ == "__main__":

@@ -1,7 +1,6 @@
 import random
 import math
 from brain_games.const import GCD_INSTRUCTION
-from brain_games.drive import say_hello
 from brain_games.drive import user_response_request
 
 
@@ -15,4 +14,4 @@ def return_r_ans_gcd():
 
 
 def start_game_gcd():
-    user_response_request(say_hello, return_r_ans_gcd)
+    user_response_request(return_r_ans_gcd)

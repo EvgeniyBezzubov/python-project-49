@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import random
 from brain_games.const import PRIME_INSTRUCTION
-from brain_games.drive import say_hello
 from brain_games.drive import user_response_request
 
 
@@ -31,4 +30,4 @@ def isPrime(n):
 
 
 def start_game_prime():
-    user_response_request(say_hello, return_r_ans_prime)
+    user_response_request(return_r_ans_prime)

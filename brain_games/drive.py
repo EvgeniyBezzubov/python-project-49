@@ -1,10 +1,15 @@
 import prompt
+from brain_games.const import max_correct_ans
 
 
-def user_response_request(name, get_answer_and_question):
-    name = name()
-    for i in range(3):
-        right_ans = get_answer_and_question()
+def user_response_request(EVEN_INSTRUCTION, get_answer_and_question):
+    name = say_hello()
+    for _ in range(max_correct_ans):
+        lst_correct_ans_random_num = get_answer_and_question()
+        right_ans = lst_correct_ans_random_num[0]
+        generated_random_num = lst_correct_ans_random_num[1]
+        print(EVEN_INSTRUCTION)
+        print('Question:', generated_random_num)
         ans = prompt.string('Your answer: ')
         if str(right_ans) == str(ans):
             print("Correct!")
@@ -15,7 +20,7 @@ def user_response_request(name, get_answer_and_question):
             break  # Завершаем выполнение функции\
             # после неправильного ответа
 
-        if i == 2:
+        if _ == 2:
             print("Congratulations, {0}!".format(name))
 
 
