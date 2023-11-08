@@ -1,10 +1,10 @@
-EVEN_INSTRUCTION = 'Answer "yes" if the number is even, \
+even_instruction = 'Answer "yes" if the number is even, \
 otherwise answer "no".'
-CALC_INSTRUCTION = "What is the result of the expression?"
-PROGRESSION_INSTRUCTION = "What number is missing in\
+calc_instruction = "What is the result of the expression?"
+progression_instruction = "What number is missing in\
  the progression?"
-PRIME_INSTRUCTION = 'Answer "yes" if given number is prime.\
+prime_instruction = 'Answer "yes" if given number is prime.\
  Otherwise answer "no".'
-GCD_INSTRUCTION = "Find the greatest common divisor\
+gcd_instruction = "Find the greatest common divisor\
  of given numbers."
-max_correct_ans = 3
+MAX_CORRECT_ANS = 3

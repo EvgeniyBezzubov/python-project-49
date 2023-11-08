@@ -1,6 +1,6 @@
-from brain_games.const import CALC_INSTRUCTION
+from brain_games.const import calc_instruction
 import random
-from brain_games.drive import user_response_request
+from brain_games.drive import start_some_game
 
 
 def return_r_ans_calc():
@@ -16,4 +16,4 @@ def return_r_ans_calc():
 
 
 def start_game_calc():
-    user_response_request(CALC_INSTRUCTION, return_r_ans_calc)
+    start_some_game(calc_instruction, return_r_ans_calc)

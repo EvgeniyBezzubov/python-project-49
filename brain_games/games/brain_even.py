@@ -1,6 +1,6 @@
 import random
-from brain_games.const import EVEN_INSTRUCTION
-from brain_games.drive import user_response_request
+from brain_games.const import even_instruction
+from brain_games.drive import start_some_game
 
 
 def return_r_ans_and_question_even():
@@ -19,4 +19,4 @@ def is_correct_answer(generated_random_num):
 
 
 def start_game_even():
-    user_response_request(EVEN_INSTRUCTION, return_r_ans_and_question_even)
+    start_some_game(even_instruction, return_r_ans_and_question_even)

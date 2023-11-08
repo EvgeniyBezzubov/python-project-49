@@ -2,9 +2,9 @@
 from brain_games.games.cli import welcome_user
 
 
-def base():
+def main():
     welcome_user()
 
 
 if __name__ == "__main__":
-    base()
+    main()

@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 import random
-from brain_games.const import PRIME_INSTRUCTION
-from brain_games.drive import user_response_request
+from brain_games.const import prime_instruction
+from brain_games.drive import start_some_game
 
 
 def return_r_ans_prime():
     RIGHT_ANS_STRING = ""
     simple = random.randint(1, 20)
     right_ans = isPrime(simple)
-    question = 'Question: {0}'.format(simple)
+    question = f'Question: {simple}'
     if right_ans:
         RIGHT_ANS_STRING = "yes"
     else:
@@ -29,4 +29,4 @@ def isPrime(n):
 
 
 def start_game_prime():
-    user_response_request(PRIME_INSTRUCTION, return_r_ans_prime)
+    start_some_game(prime_instruction, return_r_ans_prime)

@@ -1,17 +1,17 @@
 import prompt
-from brain_games.const import max_correct_ans
+from brain_games.const import MAX_CORRECT_ANS
 
 
-def user_response_request(INSTRUCTION, get_answer_and_question):
+def start_some_game(instruction, get_answer_and_question):
     name = say_hello()
-    for _ in range(max_correct_ans):
+    for _ in range(MAX_CORRECT_ANS):
         lst_correct_ans_and_quest = get_answer_and_question()
         right_ans = lst_correct_ans_and_quest[0]
         question = lst_correct_ans_and_quest[1]
-        print(INSTRUCTION)
+        print(instruction)
         print(question)
         ans = prompt.string('Your answer: ')
-        if str(right_ans) == str(ans):
+        if str(right_ans) == ans:
             print("Correct!")
         else:
             print(f"'{ans}' is wrong answer ;(.\
