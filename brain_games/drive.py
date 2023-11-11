@@ -7,7 +7,7 @@ def start_game(instruction, get_answer_and_question):
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
     for _ in range(NUM_OF_ROUNDS):
-        right_ans, question= get_answer_and_question()
+        right_ans, question = get_answer_and_question()
         instruction_and_end_line_and_question = instruction + "\n" + question
         print(instruction_and_end_line_and_question)
         ans = prompt.string('Your answer: ')
