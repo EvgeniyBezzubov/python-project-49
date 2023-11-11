@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import random
 from brain_games.const import progression_instruction
-from brain_games.drive import start_some_game
+from brain_games.drive import start_game
 
 
 def return_r_ans_progression():
@@ -20,11 +20,11 @@ def return_r_ans_progression():
     for i in ans_lst:
         ans_string = ans_string + str(i) + " "
     ans_string = "Question: " + ans_string
-    return [right_ans, ans_string]
+    return right_ans, ans_string
 
 
 def start_game_progression():
-    start_some_game(progression_instruction, return_r_ans_progression)
+    start_game(progression_instruction, return_r_ans_progression)
 
 
 if __name__ == "__main__":

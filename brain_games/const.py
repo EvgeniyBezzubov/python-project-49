@@ -7,4 +7,4 @@ prime_instruction = 'Answer "yes" if given number is prime.\
  Otherwise answer "no".'
 gcd_instruction = "Find the greatest common divisor\
  of given numbers."
-MAX_CORRECT_ANS = 3
+NUM_OF_ROUNDS = 3

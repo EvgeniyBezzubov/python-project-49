@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import random
 from brain_games.const import prime_instruction
-from brain_games.drive import start_some_game
+from brain_games.drive import start_game
 
 
 def return_r_ans_prime():
@@ -29,4 +29,4 @@ def isPrime(n):
 
 
 def start_game_prime():
-    start_some_game(prime_instruction, return_r_ans_prime)
+    start_game(prime_instruction, return_r_ans_prime)
