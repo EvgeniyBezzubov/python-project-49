@@ -19,7 +19,7 @@ def return_r_ans_progression():
     ans_string = ''
     for i in ans_lst:
         ans_string = ans_string + str(i) + " "
-    ans_string = "Question: " + ans_string
+    ans_string = f"Question: {ans_string}"
     return right_ans, ans_string
 
 
