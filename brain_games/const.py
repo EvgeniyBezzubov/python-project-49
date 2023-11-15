@@ -8,3 +8,10 @@ prime_instruction = 'Answer "yes" if given number is prime.\
 gcd_instruction = "Find the greatest common divisor\
  of given numbers."
 NUM_OF_ROUNDS = 3
+lst_operations = ["+", "-", "*"]
+start_num_for_randomize_1 = 1
+end_num_for_randomize_20 = 20
+end_num_for_randomize_100 = 100
+end_num_for_randomize_5 = 5
+start_num_for_randomize_0 = 0
+end_num_for_randomize_2 = 2

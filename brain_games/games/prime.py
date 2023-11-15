@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 import random
 from brain_games.const import prime_instruction
-from brain_games.drive import start_game
+from brain_games.engine import start_game
+from brain_games.utils import rand_int
+from brain_games.const import start_num_for_randomize_1
+from brain_games.const import end_num_for_randomize_20
 
 
 def return_r_ans_prime():
     RIGHT_ANS_STRING = ""
-    simple = random.randint(1, 20)
+    simple = rand_int(start_num_for_randomize_1,
+                      end_num_for_randomize_20)
     right_ans = isPrime(simple)
     question = f'Question: {simple}'
     if right_ans:
