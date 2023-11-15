@@ -1,4 +1,3 @@
-import random
 import math
 from brain_games.const import gcd_instruction
 from brain_games.engine import start_game

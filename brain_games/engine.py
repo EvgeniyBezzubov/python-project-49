@@ -17,8 +17,5 @@ def start_game(instruction, get_answer_and_question):
              \nCorrect answer was '{right_ans}'.\
              \nLet's try again, {name}!")
             break
-        if _ == 2:  # зачем тут данное условие? ведь мы и так выйдем из цикла после 3х успешных ответах
-                    #Если убрать условие, тополучится то что на фото
-                    # https://drive.google.com/file/d/1e7b2HF8WeZC46ZgKEVXTmWo7K2iHXhCC/view?usp=sharing
+        if _ == 2:
             print(f"Congratulations, {name}!")
-

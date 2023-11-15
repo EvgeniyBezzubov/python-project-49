@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import random
 from brain_games.const import prime_instruction
 from brain_games.engine import start_game
 from brain_games.utils import rand_int
