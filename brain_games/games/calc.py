@@ -15,7 +15,7 @@ def return_right_ans_and_question():
     rand_num_for_operation = random.randint(0, 2)
     rand_operation = lst_operations[rand_num_for_operation]
     question = f'Question: {generated_random_num_1} \
-{rand_operation} {generated_random_num_2}'
+    {lst_operations[rand_operation]} {generated_random_num_2}'
     right_ans = str(eval(f"{generated_random_num_1}\
          {lst_operations[rand_operation]} {generated_random_num_2}"))
     use_opertaion_on_numbers_and_return_right_ans(
