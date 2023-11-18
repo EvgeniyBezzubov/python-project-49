@@ -17,7 +17,7 @@ def start_game(instruction, get_answer_and_question):
              \nCorrect answer was '{right_ans}'.\
              \nLet's try again, {name}!")
             break
-      #  if _ == 2: без данного условия, о котором вы писали
-      #  код не работает корректно и пишет поздравлиения
-      #  в случае неправльного ответа
+    #  if _ == 2: без данного условия, о котором вы писали
+    #  код не работает корректно и пишет поздравлиения
+    #  в случае неправльного ответа
     print(f"Congratulations, {name}!")
