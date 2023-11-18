@@ -1,18 +1,16 @@
 #!/usr/bin/env python3
 import random
-from brain_games.const import progression_instruction
+from brain_games.const import PROGRESSION_INSTRUCTION, \
+    START_NUM_FOR_RANDOMIZE_1, END_NUM_FOR_RANDOMIZE_5, END_NUM_FOR_RANDOMIZE_20
 from brain_games.engine import start_game
 from brain_games.utils import rand_int
-from brain_games.const import start_num_for_randomize_1
-from brain_games.const import end_num_for_randomize_5
-from brain_games.const import end_num_for_randomize_20
 
 
 def return_right_ans_and_question():
     num_step = 0
     ans_lst = []
-    start_int = rand_int(start_num_for_randomize_1, end_num_for_randomize_20)
-    step_int = rand_int(start_num_for_randomize_1, end_num_for_randomize_5)
+    start_int = rand_int(START_NUM_FOR_RANDOMIZE_1, END_NUM_FOR_RANDOMIZE_20)
+    step_int = rand_int(START_NUM_FOR_RANDOMIZE_1, END_NUM_FOR_RANDOMIZE_5)
     while num_step < 10:
         start_int += step_int
         ans_lst.append(start_int)
@@ -28,7 +26,7 @@ def return_right_ans_and_question():
 
 
 def start_game_progression():
-    start_game(progression_instruction, return_right_ans_and_question)
+    start_game(PROGRESSION_INSTRUCTION, return_right_ans_and_question)
 
 
 if __name__ == "__main__":
