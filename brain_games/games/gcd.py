@@ -12,7 +12,7 @@ def return_right_ans_and_question():
                                       END_NUM_FOR_RANDOMIZE_100)
     question = f'Question: {generated_random_num_1} {generated_random_num_2}'
     r_ans = str(math.gcd(generated_random_num_1, generated_random_num_2))
-    return [r_ans, question]
+    return r_ans, question
 
 
 def start_game_gcd():
