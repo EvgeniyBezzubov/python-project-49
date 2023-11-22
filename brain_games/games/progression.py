@@ -9,8 +9,8 @@ from brain_games.utils import rand_int
 def return_right_ans_and_question():
     num_step = 0
     ans_lst = []
-    start_int = rand_int(START_NUM_FOR_RANDOMIZE_1, END_NUM_FOR_RANDOMIZE_20)
-    step_int = rand_int(START_NUM_FOR_RANDOMIZE_1, END_NUM_FOR_RANDOMIZE_5)
+    start_int = rand_int_1_20
+    step_int = rand_int_1_5
     while num_step < 10:
         start_int += step_int
         ans_lst.append(start_int)
@@ -20,7 +20,7 @@ def return_right_ans_and_question():
     ans_lst[hide_pos] = ".."
     ans_string = ''
     for i in ans_lst:
-        ans_string = ans_string + str(i) + " "
+        ans_string = f"{ans_string}{str(i)} "
     ans_string = f"Question: {ans_string}"
     return right_ans, ans_string
 

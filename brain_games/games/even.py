@@ -4,8 +4,8 @@ from brain_games.engine import start_game
 from brain_games.utils import rand_int
 
 
-def generate_correct_answer(generated_random_num):
-    if generated_random_num % 2 == 1:
+def generate_correct_answer(num):
+    if num % 2 == 1:
         correct_answer = "no"
     else:
         correct_answer = "yes"
