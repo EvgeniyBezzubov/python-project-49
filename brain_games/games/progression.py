@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import random
-from brain_games.const import PROGRESSION_INSTRUCTION, \
-    START_NUM_FOR_RANDOMIZE_1, END_NUM_FOR_RANDOMIZE_5, END_NUM_FOR_RANDOMIZE_20
+from brain_games.const import PROGRESSION_INSTRUCTION
 from brain_games.engine import start_game
 from brain_games.utils import rand_int_1_5, rand_int_1_20
 

@@ -1,5 +1,4 @@
-from brain_games.const import EVEN_INSTRUCTION, \
-    START_NUM_FOR_RANDOMIZE_1, END_NUM_FOR_RANDOMIZE_100
+from brain_games.const import EVEN_INSTRUCTION
 from brain_games.engine import start_game
 from brain_games.utils import rand_int_1_100
 
