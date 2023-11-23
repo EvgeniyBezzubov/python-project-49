@@ -3,14 +3,14 @@ import random
 from brain_games.const import PROGRESSION_INSTRUCTION, \
     START_NUM_FOR_RANDOMIZE_1, END_NUM_FOR_RANDOMIZE_5, END_NUM_FOR_RANDOMIZE_20
 from brain_games.engine import start_game
-from brain_games.utils import rand_int
+from brain_games.utils import rand_int_1_5, rand_int_1_20
 
 
 def return_right_ans_and_question():
     num_step = 0
     ans_lst = []
-    start_int = rand_int_1_20
-    step_int = rand_int_1_5
+    start_int = rand_int_1_20()
+    step_int = rand_int_1_5()
     while num_step < 10:
         start_int += step_int
         ans_lst.append(start_int)

@@ -17,7 +17,7 @@ def isPrime(n):
 
 def return_r_ans_prime():
     RIGHT_ANS_STRING = ""
-    simple = rand_int_1_20
+    simple = rand_int_1_20()
     right_ans = isPrime(simple)
     question = f'Question: {simple}'
     if right_ans:

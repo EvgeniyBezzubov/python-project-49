@@ -1,7 +1,7 @@
 from brain_games.const import EVEN_INSTRUCTION, \
     START_NUM_FOR_RANDOMIZE_1, END_NUM_FOR_RANDOMIZE_100
 from brain_games.engine import start_game
-from brain_games.utils import rand_int
+from brain_games.utils import rand_int_1_100
 
 
 def generate_correct_answer(num):
@@ -13,8 +13,7 @@ def generate_correct_answer(num):
 
 
 def return_r_ans_and_question_even():
-    generated_random_num = rand_int(START_NUM_FOR_RANDOMIZE_1,
-                                    END_NUM_FOR_RANDOMIZE_100)
+    generated_random_num = rand_int_1_100()
     question = f'Question: {generated_random_num}'
     correct_answer = str(generate_correct_answer(generated_random_num))
     return correct_answer, question
