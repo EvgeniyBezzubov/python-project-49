@@ -4,7 +4,7 @@ from brain_games.engine import start_game
 from brain_games.utils import rand_int_1_100
 
 
-def return_right_ans_and_question():
+def generate_r_ans_and_question_for_gcd():
     generated_random_num_1 = rand_int_1_100()
     generated_random_num_2 = rand_int_1_100()
     question = f'Question: {generated_random_num_1} {generated_random_num_2}'
@@ -13,4 +13,4 @@ def return_right_ans_and_question():
 
 
 def start_game_gcd():
-    start_game(GCD_INSTRUCTION, return_right_ans_and_question)
+    start_game(GCD_INSTRUCTION, generate_r_ans_and_question_for_gcd)

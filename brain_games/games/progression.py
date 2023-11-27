@@ -5,7 +5,7 @@ from brain_games.engine import start_game
 from brain_games.utils import rand_int_1_5, rand_int_1_20
 
 
-def return_right_ans_and_question():
+def generate_r_ans_and_question_for_progression():
     num_step = 0
     ans_lst = []
     start_int = rand_int_1_20()
@@ -25,8 +25,8 @@ def return_right_ans_and_question():
 
 
 def start_game_progression():
-    start_game(PROGRESSION_INSTRUCTION, return_right_ans_and_question)
+    start_game(PROGRESSION_INSTRUCTION, generate_r_ans_and_question_for_progression)
 
 
 if __name__ == "__main__":
-    return_right_ans_and_question()
+    generate_r_ans_and_question_for_progression()
