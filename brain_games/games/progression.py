@@ -2,14 +2,14 @@
 import random
 from brain_games.const import PROGRESSION_INSTRUCTION
 from brain_games.engine import start_game
-from brain_games.utils import rand_int_1_5, rand_int_1_20
+from brain_games.utils import rand_1_5, rand_1_20
 
 
-def generate_r_ans_and_question_for_progression():
+def generate_math_func_and_result_progression():
     num_step = 0
     ans_lst = []
-    start_int = rand_int_1_20()
-    step_int = rand_int_1_5()
+    start_int = rand_1_20()
+    step_int = rand_1_5()
     while num_step < 10:
         start_int += step_int
         ans_lst.append(start_int)
@@ -25,8 +25,8 @@ def generate_r_ans_and_question_for_progression():
 
 
 def start_game_progression():
-    start_game(PROGRESSION_INSTRUCTION, generate_r_ans_and_question_for_progression)
+    start_game(PROGRESSION_INSTRUCTION, generate_math_func_and_result_progression)
 
 
 if __name__ == "__main__":
-    generate_r_ans_and_question_for_progression()
+    generate_math_func_and_result_progression()

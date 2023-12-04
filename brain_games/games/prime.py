@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from brain_games.const import PRIME_INSTRUCTION
 from brain_games.engine import start_game
-from brain_games.utils import rand_int_1_20
+from brain_games.utils import rand_1_20
 
 
 def isPrime(n):
@@ -15,9 +15,9 @@ def isPrime(n):
     return d * d > n
 
 
-def return_r_ans_prime():
+def return_math_func_and_result_prime():
     RIGHT_ANS_STRING = ""
-    simple = rand_int_1_20()
+    simple = rand_1_20()
     right_ans = isPrime(simple)
     question = f'Question: {simple}'
     if right_ans:
@@ -29,4 +29,4 @@ def return_r_ans_prime():
 
 
 def start_game_prime():
-    start_game(PRIME_INSTRUCTION, return_r_ans_prime)
+    start_game(PRIME_INSTRUCTION, return_math_func_and_result_prime)
