@@ -25,7 +25,8 @@ def generate_math_func_and_result_progression():
 
 
 def start_game_progression():
-    start_game(PROGRESSION_INSTRUCTION, generate_math_func_and_result_progression)
+    start_game(PROGRESSION_INSTRUCTION,
+               generate_math_func_and_result_progression)
 
 
 if __name__ == "__main__":
