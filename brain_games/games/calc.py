@@ -10,12 +10,12 @@ def generate_math_func_and_result_calc():
     rand_operation = LST_OPERATIONS[random.randint(0, 2)]
     question = f'Question: {generated_random_num_1} ' \
                f'{rand_operation} {generated_random_num_2}'
-    right_ans = str(put_in_nums_and_operation_then_return_right_ans(
+    right_ans = str(get_result_by_math_operation(
         generated_random_num_1, rand_operation, generated_random_num_2))
     return right_ans, question
 
 
-def put_in_nums_and_operation_then_return_right_ans(
+def get_result_by_math_operation(
         num_1,
         operation,
         num_2):
