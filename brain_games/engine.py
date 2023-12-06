@@ -11,7 +11,7 @@ def start_game(instruction, get_answer_and_question):
         question, right_ans = get_answer_and_question()
         user_ans = prompt.string(f'Question: {question}\n'
                                  f'Your answer: ')
-        if  user_ans == right_ans:
+        if user_ans == right_ans:
             print("Correct!")
         else:
             print(f"'{user_ans}' is wrong answer ;(\n"

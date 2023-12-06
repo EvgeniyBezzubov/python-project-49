@@ -1,4 +1,3 @@
-import random
 from brain_games.const import CALC_INSTRUCTION, \
     LST_OPERATIONS
 from brain_games.engine import start_game
