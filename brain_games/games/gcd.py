@@ -5,10 +5,10 @@ from brain_games.utils import rand
 
 
 def get_math_expression_result():
-    generated_random_num_1 = rand
-    generated_random_num_2 = rand
-    question = f'{generated_random_num_1} {generated_random_num_2}'
-    r_ans = math.gcd(generated_random_num_1, generated_random_num_2)
+    num_1 = rand()
+    num_2 = rand()
+    question = f'{num_1} {num_2}'
+    r_ans = math.gcd(num_1, num_2)
     return question, str(r_ans)
 
 

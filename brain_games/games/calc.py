@@ -5,6 +5,7 @@ from brain_games.engine import start_game
 from brain_games.utils import rand
 from random import choice
 
+
 def get_result_by_math_operation(
         num_1,
         operation,
