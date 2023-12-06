@@ -2,32 +2,32 @@
 import random
 from brain_games.const import PROGRESSION_INSTRUCTION
 from brain_games.engine import start_game
-from brain_games.utils import rand_1_5, rand_1_20
+from brain_games.utils import rand
 
 
-def generate_math_func_and_result_progression():
+def get_math_expression_result():
     num_step = 0
     ans_lst = []
-    start_int = rand_1_20()
-    step_int = rand_1_5()
+    start_int = rand(1, 20)
+    step_int = rand(1, 5)
     while num_step < 10:
         start_int += step_int
         ans_lst.append(start_int)
         num_step += 1
     hide_pos = random.randint(0, 9)
-    right_ans = str(ans_lst[hide_pos])
+    right_ans = ans_lst[hide_pos]
     ans_lst[hide_pos] = ".."
     ans_string = ''
     for i in ans_lst:
         ans_string = f"{ans_string}{str(i)} "
-    ans_string = f"Question: {ans_string}"
-    return right_ans, ans_string
+    ans_string = f"{ans_string}"
+    return ans_string, str(right_ans)
 
 
 def start_game_progression():
     start_game(PROGRESSION_INSTRUCTION,
-               generate_math_func_and_result_progression)
+               get_math_expression_result)
 
 
 if __name__ == "__main__":
-    generate_math_func_and_result_progression()
+    get_math_expression_result()

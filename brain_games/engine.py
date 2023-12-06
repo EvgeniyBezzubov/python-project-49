@@ -8,9 +8,10 @@ def start_game(instruction, get_answer_and_question):
     print(f"Hello, {user_name}! "
           f"\n{instruction}")
     for _ in range(NUM_OF_ROUNDS):
-        right_ans, question = get_answer_and_question()
-        user_ans = prompt.string(f'{question}\nYour answer: ')
-        if right_ans == user_ans:
+        question, right_ans = get_answer_and_question()
+        user_ans = prompt.string(f'Question: {question}\n'
+                                 f'Your answer: ')
+        if  user_ans == right_ans:
             print("Correct!")
         else:
             print(f"'{user_ans}' is wrong answer ;(\n"
