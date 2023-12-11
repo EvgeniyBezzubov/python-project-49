@@ -2,7 +2,7 @@
 import random
 from brain_games.const import PROGRESSION_INSTRUCTION
 from brain_games.engine import start_game
-from brain_games.utils import rand
+from brain_games.utils import get_random_num
 
 
 def get_math_expression_result():
@@ -20,8 +20,8 @@ def get_math_expression_result():
 def generate_list_progression():
     num_step = 0
     ans_lst = []
-    start_int = rand(1, 20)
-    step_int = rand(1, 5)
+    start_int = get_random_num(1, 20)
+    step_int = get_random_num(1, 5)
     while num_step < 10:
         start_int += step_int
         ans_lst.append(start_int)

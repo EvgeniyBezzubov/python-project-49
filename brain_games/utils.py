@@ -1,6 +1,6 @@
 import random
 
 
-def rand(a=1, b=100):
+def get_random_num(a=1, b=100):
     num = random.randint(a, b)
     return num
