@@ -6,14 +6,7 @@ from brain_games.utils import rand
 
 
 def get_math_expression_result():
-    num_step = 0
-    ans_lst = []
-    start_int = rand(1, 20)
-    step_int = rand(1, 5)
-    while num_step < 10:
-        start_int += step_int
-        ans_lst.append(start_int)
-        num_step += 1
+    ans_lst = generate_list_progression()
     hide_pos = random.randint(0, 9)
     right_ans = ans_lst[hide_pos]
     ans_lst[hide_pos] = ".."
@@ -24,10 +17,18 @@ def get_math_expression_result():
     return ans_string, str(right_ans)
 
 
+def generate_list_progression():
+    num_step = 0
+    ans_lst = []
+    start_int = rand(1, 20)
+    step_int = rand(1, 5)
+    while num_step < 10:
+        start_int += step_int
+        ans_lst.append(start_int)
+        num_step += 1
+    return ans_lst
+
+
 def start_game_progression():
     start_game(PROGRESSION_INSTRUCTION,
                get_math_expression_result)
-
-
-if __name__ == "__main__":
-    get_math_expression_result()

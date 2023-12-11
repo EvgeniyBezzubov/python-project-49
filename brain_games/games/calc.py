@@ -10,25 +10,21 @@ def get_result_by_math_operation(
         operation,
         num_2):
     if operation == "+":
-        ans = num_1 + num_2
-        return ans
+        return num_1 + num_2
     elif operation == "-":
-        ans = num_1 - num_2
-        return ans
+        return num_1 - num_2
     elif operation == "*":
-        ans = num_1 * num_2
-        return ans
+        return num_1 * num_2
 
 
-def get_math_expression_result():
+def get_math_expression_and_result():
     num_1, num_2 = rand(), rand()
     rand_operation = choice(LST_OPERATIONS)
-    question = f'{num_1} ' \
+    math_expression = f'{num_1} ' \
                f'{rand_operation} {num_2}'
-    right_ans = get_result_by_math_operation(
-        num_1, rand_operation, num_2)
-    return question, str(right_ans)
+    result = get_result_by_math_operation(num_1, rand_operation, num_2)
+    return math_expression, str(result)
 
 
 def start_game_calc():
-    start_game(CALC_INSTRUCTION, get_math_expression_result)
+    start_game(CALC_INSTRUCTION, get_math_expression_and_result)

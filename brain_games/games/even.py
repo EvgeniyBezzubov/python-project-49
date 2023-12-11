@@ -3,19 +3,13 @@ from brain_games.engine import start_game
 from brain_games.utils import rand
 
 
-def generate_correct_answer(num):
-    if num % 2 == 1:
-        correct_answer = "no"
-    else:
-        correct_answer = "yes"
-    return correct_answer
+def is_even(num):
+    return num % 2 == 0
 
 
 def get_math_expression_result():
-    generated_random_num = rand()
-    question = f'{generated_random_num}'
-    correct_answer = generate_correct_answer(generated_random_num)
-    return question, str(correct_answer)
+    num = rand()
+    return num, ("no", "yes")[is_even(num)]
 
 
 def start_game_even():

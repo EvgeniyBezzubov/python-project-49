@@ -16,15 +16,9 @@ def isPrime(n):
 
 
 def get_math_expression_result():
-    RIGHT_ANS_STRING = ""
     simple = rand(1, 20)
-    right_ans = isPrime(simple)
     question = f'{simple}'
-    if right_ans:
-        RIGHT_ANS_STRING = "yes"
-    else:
-        RIGHT_ANS_STRING = "no"
-
+    RIGHT_ANS_STRING = 'yes' if isPrime(simple) else 'no'
     return question, RIGHT_ANS_STRING
 
 
