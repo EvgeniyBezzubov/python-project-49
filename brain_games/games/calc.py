@@ -21,7 +21,7 @@ def get_math_expression_and_result():
     num_1, num_2 = get_random_num(), get_random_num()
     rand_operation = choice(LST_OPERATIONS)
     math_expression = f'{num_1} ' \
-               f'{rand_operation} {num_2}'
+                      f'{rand_operation} {num_2}'
     result = get_result_by_math_operation(num_1, rand_operation, num_2)
     return math_expression, str(result)
 
