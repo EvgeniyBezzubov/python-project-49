@@ -1,5 +1,5 @@
-EVEN_INSTRUCTION = 'Answer "yes" if given number is even.' \
-                   "Otherwise answer 'no'."
+EVEN_INSTRUCTION = 'Answer "yes" if the number is even, ' \
+                   'otherwise answer "no".'
 CALC_INSTRUCTION = "What is the result of the expression?"
 PROGRESSION_INSTRUCTION = "What number is missing in" \
                           "the progression?"
