@@ -4,12 +4,10 @@ from brain_games.utils import get_random_num
 
 
 def is_prime(n):
-    if n < 2:
-        return False
-    d = 3
-    while d * d <= n and n % d != 0:
-        d += 2
-    return d * d > n
+    d = 2
+    while n % d != 0:
+        d += 1
+    return d == n
 
 
 def get_num_and_yes_no_string():
