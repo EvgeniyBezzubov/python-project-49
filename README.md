@@ -31,37 +31,41 @@ https://asciinema.org/a/5qG7zcY2a51vOAv4RcndxcM2E calc
 Расскажите как установить и использовать ваш проект, покажите пример кода:
 
 Установите пакет с помощью команды:
-\```sh
-python3 -m pip install --user git+https://github.com/EvgeniyBezzubov/python-project-49
-\```
+sh
+git clone https://github.com/EvgeniyBezzubov/python-project-49
+cd python-project-49
+poetry build
+pip install --force-reinstall C:\path-to-your-folder\python-project-49\dist\hexlet_code-0.1.0-py3-none-any.whl
+--ready to run with short cmd commands: brain-calc,brain-gcd etc.."
+
 
 ### Требования
-Для установки и запуска проекта, необходим [poetry](https://python-poetry.org/).
+Для установки и запуска проекта, необходим [poetry](https://python-poetry.org/), python 3.9
 
 ### Установка зависимостей
 Для установки зависимостей, выполните команду:
-\```sh
+sh
 make install
-\```
+
 
 ### Запуск
 Чтобы запустить утилиту в режиме разработки, выполните команду:
-\```sh
-make brain_games
-\```
+sh
+poetry run python -m brain_games.scripts.brain_games
+
 (остальные примеры)
 
 ### Создание билда
 Чтобы выполнить сборку, выполните команду: 
-\```sh
+sh
 make build
-\```
+
 
 ### Установка
 Чтобы выполнить установку пакета, выполните команду: 
-\```sh
+sh
 make package-install
-\```
+
 
 ## Contributing
 Как помочь в разработке проекта? Оформить pull request).
@@ -70,7 +74,7 @@ make package-install
 Ответы на вопросы
 
 ### Зачем вы разработали этот проект?
-Чтобы был.
+Мне было скучно
 
 ## В планах
 1 [x] Оформить README
