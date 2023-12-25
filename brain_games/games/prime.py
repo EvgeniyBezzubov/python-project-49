@@ -10,11 +10,11 @@ def is_prime(n):
     return d == n
 
 
-def get_num_and_yes_no_string():
+def get_num_and_prime_ans():
     num = get_random_num(1, 20)
-    yes_no_string = 'yes' if is_prime(num) else 'no'
-    return str(num), yes_no_string
+    answer = 'yes' if is_prime(num) else 'no'
+    return str(num), answer
 
 
 def start_game_prime():
-    start_game(PRIME_INSTRUCTION, get_num_and_yes_no_string)
+    start_game(PRIME_INSTRUCTION, get_num_and_prime_ans)

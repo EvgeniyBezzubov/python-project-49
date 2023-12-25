@@ -11,6 +11,8 @@ def get_result_by_math_operation(num1, operation, num2):
         return num1 - num2
     elif operation == "*":
         return num1 * num2
+    else:
+        raise ValueError('Unsupported operator')
 
 
 def get_math_expression_and_result():

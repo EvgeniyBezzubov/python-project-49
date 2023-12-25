@@ -18,5 +18,4 @@ def generate_progression(start, step, length):
 
 
 def start_game_progression():
-    start_game(PROGRESSION_INSTRUCTION,
-               get_progression_and_hidden_num)
+    start_game(PROGRESSION_INSTRUCTION, get_progression_and_hidden_num)

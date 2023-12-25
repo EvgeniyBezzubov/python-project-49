@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "4 cmd games: calculating, even, gcd, prime and progression"
+description = "5 cmd games: calculating, even, gcd, prime and progression"
 authors = ["Evgeniy.Bezzubov <raindrops228@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
